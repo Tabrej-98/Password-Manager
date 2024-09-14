@@ -18,6 +18,16 @@ from django.contrib import admin
 from django.urls import path
 from login import views
 
+'''urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', views.home, name='homepage'),
+    path('signup/',views.SignupPage,name='signup'),
+    path('login/',views.LoginPage,name='login'),
+    path('dashboard/',views.dashboard,name='home'),
+    path('logout/',views.LogoutPage,name='logout'),
+    
+]'''
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='homepage'),
